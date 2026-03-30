@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="contact-wrapper">
+        <div class="noise"></div>
+        <div class="contact-card">
+            <div class="card-header">
+                <span class="tag">GET IN TOUCH</span>
+                <h1 class="heading">Let's <em>talk</em></h1>
+                <p class="subtext">Drop me a message and I'll get back to you.</p>
+            </div>
+
+            <div class="form-body">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your full name" />
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="you@example.com" />
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="What's on your mind?"></textarea>
+                </div>
+
+                <button class="submit-btn" id="submitBtn">
+                    <span class="btn-text" id="btnText">Send Message</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+            
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <div class="accent-bar"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
