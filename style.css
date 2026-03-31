@@ -489,3 +489,55 @@ body {
     border-color: var(--accent-purple); /* เปลี่ยนสีขอบเป็นม่วงตอนเอาเมาส์วาง */
     transform: translateY(-2px);
 }
+
+
+/* ── สำหรับหน้าจอมือถือ (ขนาดไม่เกิน 768px) ──────────────── */
+@media (max-width: 768px) {
+    /* 1. ปรับขนาดตัวอักษรหน้า Hero */
+        .hero-content h1 {
+                font-size: 2.5rem; /* เล็กลงเพื่อให้พอดีจอ */
+                    }
+
+                        /* 2. ปรับ Navigation ให้ซ่อนหรือเรียงเป็นแนวตั้ง */
+                            nav ul {
+                                    display: none; /* หรือจะทำเป็น Hamburger Menu ก็ได้ */
+                                        }
+
+                                            /* 3. ปรับส่วน Experience ให้เรียงเป็นคอลัมน์เดียว */
+                                                .exp-item {
+                                                        margin: 1rem auto;
+                                                                padding: 15px;
+                                                                    }
+
+                                                                        /* 4. ปรับ Footer ให้เรียงซ้อนกัน (จากเดิมที่แยกซ้าย-ขวา) */
+                                                                            .footer-content {
+                                                                                    flex-direction: column;
+                                                                                            gap: 20px;
+                                                                                                    text-align: center;
+                                                                                                        }
+
+                                                                                                            .social-links {
+                                                                                                                    justify-content: center;
+                                                                                                                        }
+
+                                                                                                                            /* 5. ปรับส่วนของรูปภาพใน Project Card */
+                                                                                                                                .project-card {
+                                                                                                                                        width: 100%;
+                                                                                                                                                margin-bottom: 20px;
+                                                                                                                                                    }
+                                                                                                                                                    }
+
+                                                                                                                                                    /* ── สำหรับหน้าจอขนาดกลาง/แท็บเล็ต (769px - 1024px) ──────── */
+                                                                                                                                                    @media (min-width: 769px) and (max-width: 1024px) {
+                                                                                                                                                        .hero-content {
+                                                                                                                                                                padding: 0 50px;
+                                                                                                                                                                    }
+                                                                                                                                                                    }
+
+.container {
+        display: flex;
+            flex-wrap: wrap; /* ถ้าจอแคบ ของจะตกลงมาบรรทัดใหม่เอง */
+                justify-content: center;
+                }
+
+                                                                                                                                                                 
